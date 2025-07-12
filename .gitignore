@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+.env
+db.sqlite3
+
+# Node / React
+node_modules/
+*.log
+dist/
+build/
+book-recommendation-ui/node_modules/
+book-recommendation-ui/build/
+
+# Virtual Environment
+myenv/
