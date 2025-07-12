@@ -1,0 +1,98 @@
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 4rem;
+    background: #fefdf9;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .landing-text {
+    flex: 1;
+    max-width: 500px;
+    z-index: 1;
+  }
+  
+  .landing-text h1 {
+    font-size: 3rem;
+    color: #2b2d42;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-text p {
+    font-size: 1.25rem;
+    color: #4a4e69;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-btn,
+  .secondary-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .primary-btn {
+    background: #ff6b6b;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background: #e64949;
+    transform: scale(1.05);
+  }
+  
+  .secondary-btn {
+    background: transparent;
+    border: 2px solid #4a4e69;
+    color: #4a4e69;
+  }
+  
+  .secondary-btn:hover {
+    background: #4a4e69;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .landing-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .landing-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .landing-container {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .landing-image {
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+    .landing-text h1 {
+      font-size: 2.2rem;
+    }
+  
+    .landing-text p {
+      font-size: 1.1rem;
+    }
+  }
+  
